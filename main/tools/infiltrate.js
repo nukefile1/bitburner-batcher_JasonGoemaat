@@ -46,7 +46,7 @@ const doc = wnd["document"];
 // List of all games and an automated solver.
 const infiltrationGames = [
   {
-    name: "type it backward",
+    name: "type it backward", //change from backwards with augment
     init: function (screen) {
       const lines = getLines(getEl(screen, "p"));
       state.game.data = lines[0].split("");
@@ -114,7 +114,7 @@ const infiltrationGames = [
     },
   },
   {
-    name: "slash when his guard is down",
+    name: "attack when his guard is down",
     init: function (screen) {
       state.game.data = "wait";
       state.game.waitFrames = 45
